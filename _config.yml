@@ -1,0 +1,52 @@
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "zidalab" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Build settings
+theme: minima
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# 网页头上的信息如： ZidaLab | Shenzhen University
+head_title_Home: "Shenzhen University"
+head_title_Research: "Research"
+head_title_Members: "Members"
+head_title_Publication: "Publication"
+head_title_News: "News"
+head_title_Gallery: "Gallery"
+head_title_Contact: "Contact"
+head_title_Home_CN: "Shenzhen University"
+head_title_Research_CN: "研究"
+head_title_Members_CN: "成员"
+head_title_Publication_CN: "成果"
+head_title_News_CN: "新闻"
+head_title_Gallery_CN: "朋友圈"
+head_title_Contact_CN: "联系我们"
+
+css_file_default: style.css
+
+# header（图标、中英文切换、导航栏），这里的是语言切换部分的网址。用html文件。如果当前是英文，链接里的应该是中文的网站（要切换到中文）
+header_Home_CN: "index_CN.html"
+header_Research_CN: "research_CN.html"
+header_Members_CN: "people_CN.html"
+header_Publication_CN: "publications_CN.html"
+header_News_CN: "news_CN.html"
+header_Gallery_CN: "gallery_CN.html"
+header_Contact_CN: "contact_CN.html"
+# 中文->英文
+header_Home_EN: "index.html"
+header_Research_EN: "research.html"
+header_Members_EN: "people.html"
+header_Publication_EN: "publications.html"
+header_News_EN: "news.html"
+header_Gallery_EN: "gallery.html"
+header_Contact_EN: "contact.html"

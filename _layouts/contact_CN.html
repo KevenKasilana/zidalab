@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    {% include head.html head_title=site.head_title_Contact_CN css_file=site.css_file_default %}
+
+    <body>
+        <!-- use jssor.slider.min.js instead for release -->
+        <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+        <!--   <script type="text/javascript" src="../js/jssor.js"></script> -->
+        <div id="outer">
+            <div id="wrapper">
+                <div id="header_wrapper">
+                    {% include header_CN.html header_language_EN=site.header_Contact_EN%}
+                </div>
+
+
+                {{ content }}
+
+                <script>
+                    //创建地图,设定地图的中心点和级别
+                    var map = new AMap.Map('amap', {
+                        resizeEnable: true,
+                        zoom:11,
+                        center: [113.994289,22.59358]
+
+                    });
+
+                   /*  AMap.plugin(['AMap.ToolBar','AMap.Scale'],function(){
+                        //TODO  创建控件并添加
+                        alert("dddd");
+                    }) */
+                    //信息窗体的创建与设定
+                    var infowindow = new AMap.InfoWindow({
+                        content: '<h3>高德地图</h3><div>高德是中国领先的数字地图内容、导航和位置服务解决方案提供商。</div>',
+                        offset: new AMap.Pixel(0, -30),
+                        size:new AMap.Size(230,0)
+                   });
+                   //点标记的创建与添加
+                    var marker = new AMap.Marker({
+                        position: [113.994289,22.59358],
+                        map:map
+                    });
+                </script>
+
+				{% include footer.html %}
+            </div>
+        </div>
+    </body>
+</html>

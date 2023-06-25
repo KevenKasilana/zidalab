@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<script src="../assets/js/masonry.pkgd.min.js"></script>
+	<script language="javascript">
+		// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+		// init Masonry
+		var $grid = $('.grid').masonry({
+		  itemSelector: '.grid-item',
+		  percentPosition: true,
+		  columnWidth: '.grid-sizer'
+		});
+		// layout Isotope after each image loads
+		$grid.imagesLoaded().progress( function() {
+		  $grid.masonry();
+		});
+	</script>
+
+	{% include head.html head_title=site.head_title_Gallery_CN css_file=site.css_file_default %}
+
+	<body>
+    <!-- use jssor.slider.min.js instead for release -->
+    <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+ 	<!--   <script type="text/javascript" src="../js/jssor.js"></script> -->
+		<div id="outer_gal">
+			<div id="wrapper_gal">
+				<div id="header_wrapper">
+					{% include header_CN.html header_language_EN=site.header_Gallery_EN%}
+
+					{{ content }}
+
+					{% include footer.html %}
+					<div class="additional-footer">
+						<p>Grid layout powered by <a href = https://masonry.desandro.com/ target = blank>Masonry</a></p>
+					</div>>
+				</div>
+			</div>
+		</div>
+
+	</body>
+</html>

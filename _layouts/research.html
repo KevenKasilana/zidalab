@@ -1,0 +1,25 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	{% include head.html head_title=site.head_title_Research css_file=site.css_file_default %}
+
+	<body>
+		<!-- use jssor.slider.min.js instead for release -->
+		<!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
+	 	<!--   <script type="text/javascript" src="../js/jssor.js"></script> -->
+		<div id="outer">
+	  		<div id="wrapper">
+				<div id="header_wrapper">
+					{% include header.html header_language_CN=site.header_Research_CN%}
+				</div>
+
+				<!--	介绍内容		-->
+				<div id="content-research">
+					{{ content }}
+				</div>
+
+				{% include footer.html %}
+			</div>
+		</div>
+	</body>
+
+</html>

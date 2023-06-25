@@ -1,0 +1,30 @@
+<head>
+    <!--  设置文档字符集  -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <!--  网页关键字  -->
+    <meta name="keywords" content="Zida Li, 李自达, 深圳大学, Shenzhen University, SZU, UM, UMICH">
+    <!-- 网页标题 -->
+    <title>ZidaLab | {{ include.head_title }}</title>
+    <!-- 浏览器标签页上显示的小图标 -->
+    <link rel="shortcut icon" href="../assets/images/icons/tab_icon.png" type="favicon/ico" />
+    <!--  引用名为 style.css 的 CSS 样式表文件，media="screen" 表示该样式表只适用于屏幕输出。  -->
+    <link href="../assets/css/{{ include.css_file }}" rel="stylesheet" type="text/css" media="screen" />
+    <!--  引用名为 jquery-1.11.3.min.js 的 jQuery 库文件  -->
+    <script src="../assets/js/jquery-1.11.3.min.js"></script>
+    <!--  引用名为 jssor.slider.min.js 的 JavaScript 插件文件  -->
+    <script type="text/javascript" src="../assets/js/jssor.slider.min.js"></script>
+    <!--  引用名为 zidajs.js 的自定义 JavaScript 文件  -->
+    <script type="text/javascript" src="../assets/js/zidajs.js"></script>
+
+    <!-- 引用 Google Analytics 的 gtag.js 文件 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N53H13BXEK"></script>
+    <!--  执行 Google Analytics 相关代码，用于跟踪网站的访问情况  -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N53H13BXEK');
+    </script>
+
+</head>
