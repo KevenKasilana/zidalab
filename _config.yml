@@ -16,6 +16,10 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+exclude:
+  - assets/css
+  - assets/js
+
 # 网页头上的信息如： ZidaLab | Shenzhen University
 head_title_Home: "Shenzhen University"
 head_title_Research: "Research"
